@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form Pendaftaran</h1>
+
+    <form action="" method="post">
+        <table cellspacing="5" cellpadding="7">
+            <tr>
+                <!-- Isian Nama -->
+                <td><label for="fullname">Nama Lengkap</label></td>
+                <td><input type="text" name="fullname" id="fullname" minlength="3" required></td>
+            </tr>
+
+            <tr>
+                <!-- Isian Email -->
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" id="email" required></td>
+            </tr>
+
+            <tr>
+                <!-- Isian Password -->
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="password" id="password" minlength="8" required></td>
+            </tr>
+
+            <tr>
+                <!-- Isian Tanggal Lahir -->
+                <td><label for="birth-date">Tanggal Lahir</label></td>
+                <td><input type="date" name="birth-date" id="birth-date" required></td>
+            </tr>
+
+            <tr>
+                <!-- Isian Umur -->
+                <td><label for="age">Umur</label></td>
+                <td><input type="number" name="age" id="age" min="18" required></td>
+            </tr>
+
+            <tr>
+                <!-- Isian Jenis Kelamin -->
+                <td><label for="">Jenis Kelamin</label></td>
+                <td>
+                    <label for="male"><input type="radio" name="gender" id="male" required>Laki-laki</label>
+                    <label for="female"><input type="radio" name="gender" id="female" required>Perempuan</label>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Isian No Telp -->
+                <td><label for="phone">Nomor Telepon</label></td>
+                <td><input type="tel" name="phone" id="phone" minlength="10" maxlength="13" required></td>
+            </tr>
+
+            <tr>
+                <!-- Isian Foto Profile -->
+                <td>
+                    <label for="profile-img">Foto Profil</label><br><br>
+                    <img src="img/no-profile.png" alt="profile-img" width="80">
+                </td>
+                <td><input type="file" name="profile-img" id="profile-img" accept=".png, .jpg, .jpeg"></td>
+            </tr>
+
+            <tr>
+                <!-- Isian Syarat dan Ketentuan -->
+                <td colspan="2">
+                    <label for="terms"><input type="checkbox" name="terms" id="terms" required>Saya menyetujui Syarat dan Ketentuan</label>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- Tombol -->
+                <td colspan="2">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Kirim</button>
+                </td>
+            </tr>
+        </table>        
+    </form>
+</body>
+</html>
